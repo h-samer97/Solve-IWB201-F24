@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>إضافة تطبيق جديد</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="media/fav.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+      <nav class="main-nav">
+        <a href="index.html">الرئيسية</a> |
+        <a href="aboutUS.html">من نحن</a> |
+        <a href="apps.html">التطبيقات</a> |
+        <a href="add_app.html">إضافة تطبيق</a>
+    </nav>
+    <hr>
+    </header>
+
+  <h2>إضافة تطبيق جديد</h2>
+  <form id="appForm">
+    <label>اسم التطبيق</label><br>
+    <input type="text" id="appName" required><br><br>
+
+    <label>الفئة المصنفة</label><br>
+    <input type="text" id="category" required><br><br>
+
+    <label>الموقع الإلكتروني</label><br>
+    <input type="url" id="website" required><br><br>
+
+    <label>مجال الاستخدام</label><br>
+    <select id="usage" required>
+      <option value="">-- اختر المجال --</option>
+      <option>Robotics</option>
+      <option>Education</option>
+      <option>E-Commerce</option>
+      <option>Healthcare</option>
+      <option>Entertainment</option>
+    </select><br><br>
+
+      <label>مجاني أم لا</label><br>
+      <input type="radio" name="free" value="yes" required> مجاني
+      <input type="radio" name="free" value="no"> غير مجاني
+      <br><br>
+
+
+    <label>شرح مختصر</label><br>
+    <textarea id="description" rows="4" required></textarea><br><br>
+
+    <button type="submit">إرسال</button>
+    <button type="reset">إلغاء</button> 
+  </form>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/myFunctions.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* Master Css :) */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+:root {
+    --charcoal-color: #393e41;
+    --soft-black-color: #1b1c1d;
+    --slate-color: #4d4f50;
+    --steel-color: #6e7476;
+    --pewter-color: #9a9c9d;
+    --transition: .5s;
+    --red-palettes-dark: #2b0307;
+    --red-palettes-light: #75020f;
+}
+a {
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+    color: #393e41;
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+    font-weight: normal;
+}
+p {
+    margin: 20px auto;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+}
+a:hover {
+    transition: all var(--transition);
+    color: var(--red-palettes-dark);
+}
+button {
+    cursor: pointer;
+}
+button:hover {
+    background-color: aliceblue;
+    color: var(--soft-black-color);
+    transition: all var(--transition);
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--soft-black-color);
+    background: linear-gradient(
+        270deg,
+        rgba(241, 254, 198, 0.6),
+        rgba(168, 130, 221, 0.6),
+        rgba(219, 83, 117, 0.6),
+        rgba(179, 255, 179, 0.6),
+        rgba(98, 148, 96, 0.6),
+        rgba(244, 211, 229, 0.6),
+        rgba(65, 66, 136, 0.6),
+        rgba(176, 219, 67, 0.6)
+    );
+    background-size: 1600% 1600%;
+    animation: gradientShift 45s ease-in-out infinite;
+}
+h2 {
+    text-align: center;
+    margin: 12px auto;
+}
+hr {
+    width: 100%;
+    max-width: 100%;
+}
+table {
+    width: 90%;
+    max-width: 80%;
+    margin: 20px auto;
+}
+header {
+    width: 100%;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 25px;
+}
+.about img {
+    width: 400px;
+    border-radius: 20px;
+}
+.about h2 {
+    flex: 1;
+}
+.about ul {
+    margin: 10px;
+}
+.about ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+.about .about-text p {
+    line-height: 2;
+}
+.main-nav {
+  text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 878px;
+    margin: 20px auto;
+}
+.main-nav a {
+  margin: 0 10px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: var(--red-palettes-light);
+}
+.main-nav a:hover {
+  color: var(--red-palettes-dark);
+}
+table tr:first-child,
+table th:first-child {
+    border: solid 1px var(--soft-black-color);
+    padding: 10px;
+    text-align: center;
+    background-color: var(--soft-black-color);
+    color: var(--pewter-color);
+}
+table tr td:hover {
+    background-color: var(--soft-black-color);
+    color: var(--pewter-color);
+    transition: all var(--transition);
+}
+
+table tr,
+table td {
+    border: solid 1px var(--soft-black-color);
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+form input,
+form textarea,
+form select,
+form button {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--soft-black-color);
+    color: white;
+    text-align: center;
+}
+form input[type=submit] {
+    background-color: var(--red-palettes-light);
+    color: var(--pewter-color);
+    cursor: pointer;
+}
+form input[type=submit]:hover {
+    background-color: var(--pewter-color);
+    color: var(--red-palettes-light);
+    transition: all var(--transition);
+}
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--charcoal-color);
+  display: block;
+  margin: 10px 0 5px;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.details img {
+    width: 100px;
+    border-radius: 10%;
+    margin: 20px auto;
+}
+.details video {
+    width: 500px;
+}
+@keyframes gradientShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

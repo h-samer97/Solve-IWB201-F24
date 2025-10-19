@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>صفحة التطبيقات</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="media/fav.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+      <nav class="main-nav">
+        <a href="index.html">الرئيسية</a> |
+        <a href="aboutUS.html">من نحن</a> |
+        <a href="apps.html">التطبيقات</a> |
+        <a href="add_app.html">إضافة تطبيق</a>
+    </nav>
+    <hr>
+    </header>
+
+  <h2>التطبيقات</h2>
+  <p class="note">
+    هذه هي الخدماتنا 
+  </p>
+
+  <table id="appsTable">
+    <tr>
+      <th>اسم التطبيق</th>
+      <th>اسم الشركة المطورة</th>
+      <th>مجال الاستخدام</th>
+      <th>مجاني / غير مجاني</th>
+      <th>اختيار</th>
+    </tr>
+
+    <!-- TaskFlow -->
+    <tr class="app-row" data-app-id="app1">
+      <td>TaskFlow</td>
+      <td>Flowware Inc.</td>
+      <td>إدارة مهام</td>
+      <td>مجاني</td>
+      <td><input type="checkbox" class="toggle-details" /></td>
+    </tr>
+    <tr class="details-row" data-details-for="app1">
+      <td colspan="5">
+        <div class="details">
+          <div><span class="label">عنوان الموقع الإلكتروني:</span> 
+            <a href="https://taskflow.com" target="_blank">taskflow.com</a>
+          </div>
+          <div><span class="label">شرح مختصر:</span> تطبيق لتخطيط المشاريع وتتبع المهام مع تعاون الفريق.</div>
+          <div>
+            <span class="label">أيقونة التطبيق</span> 
+            <img class="logo" src="media/01.jpg" alt="TaskFlow" />
+          </div>
+          <div>
+            <span class="label">فيديو تعريفي</span>
+            <video src="media/01.mp4" controls></video>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <!-- EduNote -->
+    <tr class="app-row" data-app-id="app2">
+      <td>EduNote</td>
+      <td>LearnX</td>
+      <td>تعليم</td>
+      <td>غير مجاني</td>
+      <td><input type="checkbox" class="toggle-details" /></td>
+    </tr>
+    <tr class="details-row" data-details-for="app2">
+      <td colspan="5">
+        <div class="details">
+          <div><span class="label">عنوان الموقع الإلكتروني:</span> 
+            <a href="https://edunote.com" target="_blank">edunote.com</a>
+          </div>
+          <div><span class="label">شرح مختصر:</span> منصة لإنشاء دفاتر ملاحظات ومشاركة المحتوى الأكاديمي.</div>
+          <div>
+              <span class="label">أيقونة التطبيق</span> 
+            <img class="logo" src="media/02.jpg" alt="EduNote" />
+          </div>
+          <div><span class="label">فيديو تعريفي</span>
+            <video src="media/02.mp4" controls></video>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <!-- ShopLite -->
+    <tr class="app-row" data-app-id="app3">
+      <td>ShopLite</td>
+      <td>RetailSoft</td>
+      <td>تجارة إلكترونية</td>
+      <td>مجاني</td>
+      <td><input type="checkbox" class="toggle-details" /></td>
+    </tr>
+    <tr class="details-row" data-details-for="app3">
+      <td colspan="5">
+        <div class="details">
+          <div><span class="label">عنوان الموقع الإلكتروني:</span> 
+            <a href="https://shoplite.com" target="_blank">shoplite.com</a>
+          </div>
+          <div><span class="label">شرح مختصر:</span> متجر بسيط لإدارة منتجات وطلبات صغيرة</div>
+          <div>
+              <span class="label">أيقونة التطبيق</span> 
+            <img class="logo" src="media/03.jpg" alt="ShopLite" />
+          </div>
+            <div>
+                <span class="label">فيديو تعريفي</span>
+                <video src="media/03.mp4" controls></video>
+            </div>
+        </div>
+      </td>
+    </tr>
+
+    <!-- HealthTrack -->
+    <tr class="app-row" data-app-id="app4">
+      <td>HealthTrack</td>
+      <td>VitalApps</td>
+      <td>صحة ولياقة</td>
+      <td>غير مجاني</td>
+      <td><input type="checkbox" class="toggle-details" /></td>
+    </tr>
+    <tr class="details-row" data-details-for="app4">
+      <td colspan="5">
+        <div class="details">
+          <div><span class="label">عنوان الموقع الإلكتروني:</span> 
+            <a href="https://healthtrack.com" target="_blank">healthtrack.com</a>
+          </div>
+          <div><span class="label">شرح مختصر:</span> متابعة النشاط اليومي والأهداف الصحية مع لوحات تحكّم.</div>
+          <div>
+            <span class="label">ايقونة التطبيق</span> 
+            <img class="logo" src="media/04.jpg" alt="HealthTrack" />
+          </div>
+          <div><span class="label">فيديو تعريفي</span>
+            <video src="media/04.mp4" controls></video>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <!-- ArtBoard -->
+    <tr class="app-row" data-app-id="app5">
+      <td>ArtBoard</td>
+      <td>StudioLab</td>
+      <td>تصميم رقمي</td>
+      <td>مجاني</td>
+      <td><input type="checkbox" class="toggle-details" /></td>
+    </tr>
+    <tr class="details-row" data-details-for="app5">
+      <td colspan="5">
+        <div class="details">
+          <div><span class="label">عنوان الموقع الإلكتروني:</span> 
+            <a href="https://artboard.example.com" target="_blank">artboard.example.com</a>
+          </div>
+          <div><span class="label">شرح مختصر:</span> أدوات رسومية لإنشاء بطاقات وشعارات بسرعة.</div>
+          <div>
+            <span class="label">أيقونة التطبيق</span> 
+            <img class="logo" src="media/05.jpg" alt="ArtBoard" />
+          </div>
+          <div>
+            <span class="label">فيديو تعريفي</span>
+            <video src="media/05.mp4" controls></video>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/myFunctions.js"></script>
+</body>
+</html>
